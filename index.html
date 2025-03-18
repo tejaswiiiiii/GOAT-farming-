@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Freshshop - Ecommerce Bootstrap 4 HTML Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="custom-select-box">
+                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
+							
+						</select>
+                    </div>
+                    <div class="right-phone-box">
+                        <p>Call US :- <a href="#"> 8209925051</a></p>
+                    </div>
+                    <div class="our-link">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li>
+                            <li><a href="#"><i class="fas fa-location-arrow"></i> Our location</a></li>
+                            <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="login-box">
+						<select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
+							<option>Register Here</option>
+							<option>Sign In</option>
+						</select>
+					</div>
+                    <div class="text-slid-box">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <a class="navbar-brand" href="index.html"><img src="logaa.jpeg" class="logo" alt="" style="height: 120px; width: 120px;"></a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
+                            <ul class="dropdown-menu">
+								<li><a href="shop.html">Sidebar Shop</a></li>
+								<li><a href="shop-detail.html">Shop Detail</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="my-account.html">My Account</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="data:image/jpeg;base64,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">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                    <ul>
+                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li class="side-menu">
+							<a href="#">
+								<i class="fa fa-shopping-bag"></i>
+								<span class="badge">3</span>
+								<p>My Cart</p>
+							</a>
+						</li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+            </div>
+            <!-- Start Side Menu -->
+            <div class="side">
+                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+                <li class="cart-box">
+                    <ul class="cart-list">
+                        <li>
+                            <a href="#" class="photo"><img src="images/img-pro-01.jp" class="cart-thumb" alt="" /></a>
+                            <h6><a href="#">Delica omtantur </a></h6>
+                            <p>1x - <span class="price">$80.00</span></p>
+                        </li>
+                        <li>
+                            <a href="#" class="photo"><img src="images/img-pro-02.jpg" class="cart-thumb" alt="" /></a>
+                            <h6><a href="#">Omnes ocurreret</a></h6>
+                            <p>1x - <span class="price">$60.00</span></p>
+                        </li>
+                        <li>
+                            <a href="#" class="photo"><img src="images/img-pro-03.jpg" class="cart-thumb" alt="" /></a>
+                            <h6><a href="#">Agam facilisis</a></h6>
+                            <p>1x - <span class="price">$40.00</span></p>
+                        </li>
+                        <li class="total">
+                            <a href="#" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
+                            <span class="float-right"><strong>Total</strong>: $180.00</span>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            <!-- End Side Menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+
+    <!-- Start Slider -->
+    <div id="slides-shop" class="cover-slides">
+        <ul class="slides-container">
+            <li class="text-center">
+                <img src="suraj 2.jpeg" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong>Welcome To <br>DC Goat farm</strong></h1>
+                            <p class="m-b-40">See how your users experience your website in realtime or view <br> trends to see any changes in performance over time.</p>
+                            <p><a class="btn hvr-hover" href="#">Shop Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="text-center">
+                <img src="suraj33.jpeg" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong>Welcome To <br> suraj farm</strong></h1>
+                            <p class="m-b-40">See how your users experience your website in realtime or view <br> trends to see any changes in performance over time.</p>
+                            <p><a class="btn hvr-hover" href="#">Shop Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="text-center">
+                <img src="day 1.jpeg" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong>Welcome To <br>Devraj</strong></h1>
+                            <p class="m-b-40">See how your users experience your website in realtime or view <br> trends to see any changes in performance over time.</p>
+                            <p><a class="btn hvr-hover" href="#">Shop Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="slides-navigation">
+            <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <!-- End Slider -->
+
+    <!-- Start Categories  -->
+    <div class="categories-shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="day 3.jpeg" alt="" />
+                        <a class="btn hvr-hover" href="#">Angora</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="tin raat.jpeg" alt="" />
+                        <a class="btn hvr-hover" href="#">sojat</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="goat a3.webp" alt="" />
+                        <a class="btn hvr-hover" href="#">Barbari</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Categories -->
+	
+	<div class="box-add-products">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="offer-box-products">
+						<img class="img-fluid" src="goatb1.jpg" alt="" />
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="offer-box-products">
+						<img class="img-fluid" src="goatb2.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Start Products  -->
+    <div class="products-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1>GOATS</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus enim.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="special-menu text-center">
+                        <div class="button-group filter-button-group">
+                            <button class="active" data-filter="*">All</button>
+                            <button data-filter=".top-featured">Top featured</button>
+                            <button data-filter=".best-seller">Best seller</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row special-list">
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">Sale</p>
+                            </div>
+                            <img src="goat c1.jpg" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                </ul>
+                                <a class="cart" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Lorem ipsum dolor sit amet</h4>
+                            <h5> $7.79</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 special-grid top-featured">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="new">New</p>
+                            </div>
+                            <img src="goatc2.jpg" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                </ul>
+                                <a class="cart" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Lorem ipsum dolor sit amet</h4>
+                            <h5> $9.79</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 special-grid top-featured">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">Sale</p>
+                            </div>
+                            <img src="images/img-pro-03.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                </ul>
+                                <a class="cart" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Lorem ipsum dolor sit amet</h4>
+                            <h5> $10.79</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">Sale</p>
+                            </div>
+                            <img src="images/img-pro-04.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                </ul>
+                                <a class="cart" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Lorem ipsum dolor sit amet</h4>
+                            <h5> $15.79</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Products  -->
+
+    <!-- Start Blog  -->
+    <div class="latest-blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1>latest blog</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus enim.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img class="img-fluid" src="images/blog-img.jpg" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="title-blog">
+                                <h3>Fusce in augue non nisi fringilla</h3>
+                                <p>Nulla ut urna egestas, porta libero id, suscipit orci. Quisque in lectus sit amet urna dignissim feugiat. Mauris molestie egestas pharetra. Ut finibus cursus nunc sed mollis. Praesent laoreet lacinia elit id lobortis.</p>
+                            </div>
+                            <ul class="option-blog">
+                                <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#"><i class="far fa-comments"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img class="img-fluid" src="images/blog-img-01.jpg" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="title-blog">
+                                <h3>Fusce in augue non nisi fringilla</h3>
+                                <p>Nulla ut urna egestas, porta libero id, suscipit orci. Quisque in lectus sit amet urna dignissim feugiat. Mauris molestie egestas pharetra. Ut finibus cursus nunc sed mollis. Praesent laoreet lacinia elit id lobortis.</p>
+                            </div>
+                            <ul class="option-blog">
+                                <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#"><i class="far fa-comments"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img class="img-fluid" src="images/blog-img-02.jpg" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="title-blog">
+                                <h3>Fusce in augue non nisi fringilla</h3>
+                                <p>Nulla ut urna egestas, porta libero id, suscipit orci. Quisque in lectus sit amet urna dignissim feugiat. Mauris molestie egestas pharetra. Ut finibus cursus nunc sed mollis. Praesent laoreet lacinia elit id lobortis.</p>
+                            </div>
+                            <ul class="option-blog">
+                                <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#"><i class="far fa-comments"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Blog  -->
+
+
+    <!-- Start Instagram Feed  -->
+    <div class="instagram-box">
+        <div class="main-instagram owl-carousel owl-theme">
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-01.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-02.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-03.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-04.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-06.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-07.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-08.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-09.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Instagram Feed  -->
+
+
+    <!-- Start Footer  -->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+							<h3>Business Time</h3>
+							<ul class="list-time">
+								<li>Monday - Friday: 08.00am to 05.00pm</li> <li>Saturday: 10.00am to 08.00pm</li> <li>Sunday: <span>Closed</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+							<h3>Newsletter</h3>
+							<form class="newsletter-box">
+								<div class="form-group">
+									<input class="" type="email" name="Email" placeholder="Email Address*" />
+									<i class="fa fa-envelope"></i>
+								</div>
+								<button class="btn hvr-hover" type="submit">Submit</button>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+							<h3>Social Media</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<ul>
+                                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                            </ul>
+						</div>
+					</div>
+				</div>
+				<hr>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-widget">
+                            <h4>About Freshshop</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> 							
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>Information</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Customer Service</a></li>
+                                <li><a href="#">Our Sitemap</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link-contact">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li>
+                                    <p><i class="fas fa-map-marker-alt"></i>Address: Michael I. Days 3756 <br>Preston Street Wichita,<br> KS 67213 </p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1-888 705 770</a></p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer  -->
+
+    <!-- Start copyright  -->
+    <div class="footer-copyright">
+        <p class="footer-company">All Rights Reserved. &copy; 2018 <a href="#">ThewayShop</a> Design By :
+            <a href="https://html.design/">html design</a></p>
+    </div>
+    <!-- End copyright  -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
